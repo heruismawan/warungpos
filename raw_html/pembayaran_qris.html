@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WarungPOS - Payment Modal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#d6e0f4",
+                        "surface-container": "#e9efe9",
+                        "on-secondary-fixed": "#121c2a",
+                        "error-container": "#ffdad6",
+                        "background": "#f5fbf5",
+                        "secondary": "#555f70",
+                        "on-error": "#ffffff",
+                        "outline": "#6d7a72",
+                        "on-secondary-fixed-variant": "#3d4757",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#dee4de",
+                        "surface-container-low": "#eff5ef",
+                        "surface-container-highest": "#dee4de",
+                        "tertiary-fixed-dim": "#ffb3ae",
+                        "primary-fixed": "#85f8c4",
+                        "on-tertiary-container": "#fffbff",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#9b3e3b",
+                        "primary": "#006948",
+                        "tertiary-fixed": "#ffdad7",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#410004",
+                        "surface-dim": "#d5dcd6",
+                        "on-secondary-container": "#596374",
+                        "surface": "#f5fbf5",
+                        "on-background": "#171d19",
+                        "inverse-surface": "#2c322e",
+                        "inverse-primary": "#68dba9",
+                        "secondary-fixed": "#d9e3f7",
+                        "on-surface-variant": "#3d4a42",
+                        "secondary-fixed-dim": "#bdc7db",
+                        "outline-variant": "#bccac0",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#7f2928",
+                        "tertiary-container": "#ba5551",
+                        "on-primary-container": "#f5fff7",
+                        "on-surface": "#171d19",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#006c4a",
+                        "primary-container": "#00855d",
+                        "surface-container-high": "#e4eae4",
+                        "surface-bright": "#f5fbf5",
+                        "on-primary-fixed": "#002114",
+                        "primary-fixed-dim": "#68dba9",
+                        "on-primary-fixed-variant": "#005137",
+                        "inverse-on-surface": "#ecf2ec"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sidebar-width": "260px",
+                        "margin-page": "32px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "label-uppercase": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-sm": ["Inter"],
+                        "body-base": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-uppercase": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-md": ["18px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "display-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-base": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen font-body-base text-on-background relative">
+<div class="absolute inset-0 p-8 grid grid-cols-12 gap-6 opacity-30 pointer-events-none filter blur-sm">
+<div class="col-span-8 bg-surface-container-lowest rounded-xl shadow-sm h-96"></div>
+<div class="col-span-4 bg-surface-container-lowest rounded-xl shadow-sm h-96"></div>
+</div>
+<div class="fixed inset-0 z-50 bg-on-background/40 backdrop-blur-[2px] flex items-center justify-center p-4">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-[0_10px_15px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col transform transition-all">
+<div class="px-6 py-4 border-b border-outline-variant flex justify-between items-center bg-surface-container-lowest">
+<h2 class="font-headline-md text-headline-md text-on-surface">Pembayaran</h2>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="bg-surface-container py-6 px-6 text-center border-b border-outline-variant">
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">Total Tagihan</p>
+<p class="font-display-sm text-display-sm text-primary">Rp 150.000</p>
+</div>
+<div class="flex border-b border-outline-variant px-2 bg-surface-container-lowest">
+<button class="flex-1 py-3 px-4 text-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors flex flex-col items-center gap-1 border-b-2 border-transparent focus:outline-none focus:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+                    Tunai
+                </button>
+<button class="flex-1 py-3 px-4 text-center font-body-sm text-body-sm text-primary border-b-2 border-primary flex flex-col items-center gap-1 bg-surface-container-low/50 focus:outline-none">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">qr_code_scanner</span>
+<span class="font-medium">E-Wallet (QRIS)</span>
+</button>
+<button class="flex-1 py-3 px-4 text-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors flex flex-col items-center gap-1 border-b-2 border-transparent focus:outline-none focus:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+                    Transfer Bank
+                </button>
+</div>
+<div class="p-8 flex flex-col items-center bg-surface-container-lowest">
+<div class="w-52 h-52 bg-white border border-outline-variant rounded-lg p-3 mb-5 flex items-center justify-center shadow-sm relative overflow-hidden group">
+<img alt="QR Code" class="w-full h-full object-cover rounded mix-blend-multiply opacity-90" data-alt="A close-up, high-contrast black and white square matrix barcode, resembling a modern QR code for digital payments. The code is crisp and clear, presented against a pure white background to ensure scannability. The overall style is clean, functional, and purely digital, emphasizing technical precision and utility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh4t8nd0RCRxZkfhy075jDT4ZM_d8IjY8OhO5N9wIHKIG7usFLijXnMql4U8-c4Rw7ByqXNMGWA1CXtHBs5IQv5WIZubFLV49sOF66zXaPVvwth-Cpa8765ef28p2kXp0q8oqNtHUY6nz0tyYhx4MQ0sW9s6LxAPitoznnklvhXX9Apl02tIB-OLGXVXKz08fSdGOlVtv8NZMzD7f7Yhb32_3cC3rKfM-x_lUmHf43fYs0WJllcnc7eL5qc0LAK8U2mwfKTic9D76W"/>
+<div class="absolute inset-0 border-[3px] border-primary rounded-lg opacity-20 m-3 pointer-events-none"></div>
+</div>
+<div class="flex flex-wrap gap-2 mb-6 items-center justify-center max-w-[280px]">
+<span class="px-2.5 py-1 bg-[#00AED6]/10 text-[#00AED6] rounded font-label-uppercase text-label-uppercase border border-[#00AED6]/20">GOPAY</span>
+<span class="px-2.5 py-1 bg-[#4C3494]/10 text-[#4C3494] rounded font-label-uppercase text-label-uppercase border border-[#4C3494]/20">OVO</span>
+<span class="px-2.5 py-1 bg-[#118EEA]/10 text-[#118EEA] rounded font-label-uppercase text-label-uppercase border border-[#118EEA]/20">DANA</span>
+<span class="px-2.5 py-1 bg-[#E31E24]/10 text-[#E31E24] rounded font-label-uppercase text-label-uppercase border border-[#E31E24]/20">LinkAja</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center max-w-sm mb-1">
+                    Silahkan scan kode QR di atas menggunakan aplikasi e-wallet Anda
+                </p>
+<p class="font-label-uppercase text-label-uppercase text-on-surface-variant text-center mb-8">
+                    ID: TRX-9928374
+                </p>
+<button class="flex items-center gap-2 px-5 py-2.5 border border-outline text-on-surface-variant rounded hover:bg-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1 focus:ring-offset-surface-container-lowest">
+<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span>
+                    Cek Status Pembayaran
+                </button>
+</div>
+<div class="px-6 py-4 border-t border-outline-variant bg-surface-container-low flex justify-end gap-3 items-center">
+<button class="px-5 py-2.5 border border-outline text-on-surface-variant rounded font-body-sm text-body-sm hover:bg-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1 focus:ring-offset-surface-container-low">
+                    Batal
+                </button>
+<button class="px-5 py-2.5 bg-primary text-on-primary rounded font-body-sm text-body-sm opacity-50 cursor-not-allowed flex items-center gap-2" disabled="">
+                    Konfirmasi Pembayaran
+                    <span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

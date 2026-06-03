@@ -1,0 +1,2986 @@
+.warung-pos-dashboard-8y-frame-warung-pos8y {
+    width: 1441px;
+    height: auto;
+    padding: 0 0 0 260px;
+    max-width: 1441px;
+    box-sizing: border-box;
+    min-height: 1024px;
+    background-color: #fff;
+}
+
+.warung-pos-dashboard-8y-frame-group1-lh {
+    top: 0;
+    left: 0;
+    width: 1441px;
+    position: absolute;
+    max-width: 1441px;
+    box-sizing: border-box;
+    min-height: 1024px;
+}
+
+.warung-pos-dashboard-8y-frame-main-content-xx {
+    width: 1181px;
+    height: auto;
+    padding: 96px 32px 250px;
+    overflow: hidden;
+    max-width: 1181px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-container9f,
+.warung-pos-dashboard-8y-frame-header-kg,
+.warung-pos-dashboard-8y-frame-main-content-xx {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container9f {
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    max-width: 1440px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-header-kg {
+    gap: 4px;
+}
+
+.warung-pos-dashboard-8y-frame-header-kg,
+.warung-pos-dashboard-8y-frame-heading2-nd {
+    width: 100%;
+    height: auto;
+    max-width: 1117px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-overview-dashboard-ye1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-overview-dashboard-ye2 {
+    color: #171d19;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0;
+    letter-spacing: -.47999998927116394px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container1b {
+    width: 100%;
+    height: auto;
+    max-width: 1117px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-cc1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-cc2 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-bento-grid-f9 {
+    max-width: 1117px;
+    align-self: stretch;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-bento-grid-f9,
+.warung-pos-dashboard-8y-frame-card3-qa,
+.warung-pos-dashboard-8y-frame-paragraph-t7 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-card3-qa {
+    gap: 8px;
+    padding: 24px 24px 48px;
+    flex-grow: 1;
+    max-width: 261px;
+    border-top: 1px solid #bccac0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    border-left: 1px solid #bccac0;
+    flex-shrink: 1;
+    border-right: 1px solid #bccac0;
+    border-bottom: 1px solid #bccac0;
+    border-radius: 12px 12px 12px 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+}
+
+.warung-pos-dashboard-8y-frame-paragraph-t7 {
+    gap: 52.95000076293945px;
+    max-width: 211px;
+    align-self: stretch;
+    justify-content: space-between;
+}
+
+.warung-pos-dashboard-8y-text481 {
+    width: 100%;
+    max-width: 94.02999877929688px;
+    margin-top: 0;
+    min-height: 16px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text482 {
+    color: #3d4a42;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 0;
+    letter-spacing: .6000000238418579px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-vector-icon-oo {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 19px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-heading3-dn {
+    width: 100%;
+    height: auto;
+    max-width: 211px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text1200002m1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text1200002m2 {
+    color: #171d19;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0;
+    letter-spacing: -.47999998927116394px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container-rl {
+    gap: 4px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 8px 0 0;
+    position: relative;
+    max-width: 211px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container-gk {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon5j {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 16px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-ui1 {
+    width: 100%;
+    max-width: 112.80999755859375px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-ui2 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-card1-jh {
+    gap: 8px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 24px;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+    max-width: 261px;
+    border-top: 1px solid #bccac0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    align-items: flex-start;
+    border-left: 1px solid #bccac0;
+    flex-shrink: 1;
+    border-right: 1px solid #bccac0;
+    border-bottom: 1px solid #bccac0;
+    border-radius: 12px 12px 12px 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+}
+
+.warung-pos-dashboard-8y-frame-container4w {
+    width: 100%;
+    height: auto;
+    max-width: 211px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-total-sales-tv1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-total-sales-tv2 {
+    color: #3d4a42;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 0;
+    letter-spacing: .6000000238418579px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container4x {
+    width: 100%;
+    max-width: 211px;
+    align-self: stretch;
+    box-sizing: border-box;
+    min-height: 64px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-heading3-fy {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-qz1 {
+    width: 100%;
+    max-width: 117.80999755859375px;
+    margin-top: 0;
+    min-height: 64px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-qz2,
+.warung-pos-dashboard-8y-text-qz3 {
+    color: #171d19;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0;
+    letter-spacing: -.47999998927116394px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-margin20 {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: 0 0 4px;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-overlay-wt {
+    gap: 3.990000009536743px;
+    display: flex;
+    padding: 2px 8px;
+    position: relative;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    justify-content: flex-start;
+    background-color: rgba(0, 133, 93, .1);
+}
+
+.warung-pos-dashboard-8y-frame-container7u,
+.warung-pos-dashboard-8y-frame-overlay-wt {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon-iv {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 9.3333740234375px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-tw1 {
+    width: 100%;
+    max-width: 34.029998779296875px;
+    margin-top: 0;
+    min-height: 16px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-tw2 {
+    color: #006948;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Nimbus Sans", sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container-l5 {
+    top: 177px;
+    left: 453px;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    opacity: .10000000149011612;
+    padding: 16px;
+    position: absolute;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-vector-icon-w6 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 66.6666259765625px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-container-d2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    opacity: .699999988079071;
+    padding: 8px 0 0;
+    position: relative;
+    max-width: 211px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-text8m211 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text8m212 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-card2y8,
+.warung-pos-dashboard-8y-frame-paragraph-o3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-card2y8 {
+    gap: 8px;
+    padding: 24px 24px 26px;
+    overflow: hidden;
+    flex-grow: 1;
+    max-width: 261px;
+    border-top: 1px solid #bccac0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    border-left: 1px solid #bccac0;
+    flex-shrink: 1;
+    border-right: 1px solid #bccac0;
+    border-bottom: 1px solid #bccac0;
+    border-radius: 12px 12px 12px 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+}
+
+.warung-pos-dashboard-8y-frame-paragraph-o3 {
+    gap: 14.979999542236328px;
+    max-width: 211px;
+    align-self: stretch;
+    justify-content: space-between;
+}
+
+.warung-pos-dashboard-8y-text4y1 {
+    width: 100%;
+    max-width: 132px;
+    margin-top: 0;
+    min-height: 16px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text4y2 {
+    color: #3d4a42;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 0;
+    letter-spacing: .6000000238418579px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-vector-icon-tx {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 22px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-heading3r0 {
+    width: 100%;
+    height: auto;
+    max-width: 211px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text14-item-fz1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text14-item-fz2 {
+    color: #171d19;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0;
+    letter-spacing: -.47999998927116394px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-background-border-lt,
+.warung-pos-dashboard-8y-frame-container-wu {
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container-wu {
+    gap: 8px;
+    width: 100%;
+    height: auto;
+    padding: 8px 0 0;
+    max-width: 211px;
+}
+
+.warung-pos-dashboard-8y-frame-background-border-lt {
+    width: fit-content;
+    padding: 4px 40px 4px 8px;
+    max-width: none;
+    border-top: 1px solid rgba(186, 26, 26, .2);
+    border-left: 1px solid rgba(186, 26, 26, .2);
+    border-right: 1px solid rgba(186, 26, 26, .2);
+    border-bottom: 1px solid rgba(186, 26, 26, .2);
+    border-radius: 4px 4px 4px 4px;
+    flex-direction: column;
+    background-color: #ffdad6;
+}
+
+.warung-pos-dashboard-8y-text0v1 {
+    width: 100%;
+    max-width: 39.939998626708984px;
+    margin-top: 0;
+    min-height: 32px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text0v2,
+.warung-pos-dashboard-8y-text0v3 {
+    color: #93000a;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Nimbus Sans", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-background-border-bw {
+    width: fit-content;
+    display: flex;
+    padding: 4px 25px 4px 8px;
+    position: relative;
+    max-width: none;
+    align-self: stretch;
+    border-top: 1px solid #bccac0;
+    box-sizing: border-box;
+    align-items: flex-start;
+    border-left: 1px solid #bccac0;
+    border-right: 1px solid #bccac0;
+    border-bottom: 1px solid #bccac0;
+    border-radius: 4px 4px 4px 4px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #dee4de;
+}
+
+.warung-pos-dashboard-8y-text-et1 {
+    width: 100%;
+    max-width: 37.52000045776367px;
+    margin-top: 0;
+    min-height: 32px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-et2,
+.warung-pos-dashboard-8y-text-et3 {
+    color: #171d19;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Nimbus Sans", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-card4-pu {
+    gap: 8px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 24px 24px 42px;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+    max-width: 261px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-radius: 12px 12px 12px 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #006948;
+}
+
+.warung-pos-dashboard-8y-frame-container8z {
+    width: 100%;
+    height: auto;
+    max-width: 213px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-monthly-profit-k01 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-monthly-profit-k02 {
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 0;
+    letter-spacing: .6000000238418579px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-heading3-mx {
+    width: 100%;
+    height: auto;
+    max-width: 213px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text800000-xy1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text800000-xy2 {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0;
+    letter-spacing: -.47999998927116394px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container-kn {
+    gap: 42.84000015258789px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 8px 0 0;
+    position: relative;
+    max-width: 213px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.warung-pos-dashboard-8y-frame-container-vo {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-wl1 {
+    width: 100%;
+    max-width: 94.13999938964844px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-wl2 {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-overlay7m {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: 6px;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: flex-start;
+    border-radius: 9999px 9999px 9999px 9999px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.warung-pos-dashboard-8y-vector-icon-in {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 20px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-background-blur-to {
+    top: 152px;
+    left: 1305px;
+    width: 128px;
+    filter: blur(40px);
+    height: 128px;
+    opacity: .5;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 9999px 9999px 9999px 9999px;
+    background-color: #00855d;
+}
+
+.warung-pos-dashboard-8y-frame-chart-area-eu,
+.warung-pos-dashboard-8y-frame-layout24p {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-layout24p {
+    height: auto;
+    max-width: 1117px;
+    align-self: stretch;
+}
+
+.warung-pos-dashboard-8y-frame-chart-area-eu {
+    flex-grow: 1;
+    max-width: 737px;
+    border-top: 1px solid #bccac0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    min-height: 400px;
+    border-left: 1px solid #bccac0;
+    flex-shrink: 1;
+    border-right: 1px solid #bccac0;
+    border-bottom: 1px solid #bccac0;
+    border-radius: 12px 12px 12px 12px;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.warung-pos-dashboard-8y-frame-horizontal-border-pv {
+    gap: 312.8999938964844px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 24px;
+    position: relative;
+    max-width: 735px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 1px solid #bccac0;
+    justify-content: space-between;
+}
+
+.warung-pos-dashboard-8y-frame-heading30w {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-gd1 {
+    width: 100%;
+    max-width: 234.41000366210938px;
+    margin-top: 0;
+    min-height: 28px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-gd2 {
+    color: #171d19;
+    font-size: 18px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-button-re {
+    display: flex;
+    padding: 4px;
+    position: relative;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.warung-pos-dashboard-8y-frame-button-re,
+.warung-pos-dashboard-8y-frame-container7w {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon-wv {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 4px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-container-mq {
+    width: 100%;
+    display: flex;
+    padding: 24px;
+    position: relative;
+    flex-grow: 1;
+    max-width: 735px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: flex-end;
+    flex-shrink: 1;
+    justify-content: center;
+}
+
+.warung-pos-dashboard-8y-frame-faux-chart-bp {
+    gap: 66px;
+    top: 476px;
+    left: 317px;
+    width: 687px;
+    display: flex;
+    position: absolute;
+    max-width: 687px;
+    box-sizing: border-box;
+    min-height: 273px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.warung-pos-dashboard-8y-frame-horizontal-divider-g0,
+.warung-pos-dashboard-8y-frame-horizontal-divider-ix,
+.warung-pos-dashboard-8y-frame-horizontal-divider-sk,
+.warung-pos-dashboard-8y-frame-horizontal-divider-ty,
+.warung-pos-dashboard-8y-frame-horizontal-divider4z {
+    width: 687px;
+    height: 1px;
+    align-self: stretch;
+    border-top: 1px solid rgba(188, 202, 192, .3);
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-faux-css-hj {
+    gap: 8px;
+    width: 100%;
+    display: flex;
+    padding: 0 16px;
+    position: relative;
+    flex-grow: 1;
+    max-width: 687px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: flex-end;
+    flex-shrink: 1;
+    justify-content: space-between;
+}
+
+.warung-pos-dashboard-8y-frame-background-horizontal-mp,
+.warung-pos-dashboard-8y-frame-background-horizontal-pm,
+.warung-pos-dashboard-8y-frame-background-horizontal0n {
+    width: 100%;
+    flex-grow: 1;
+    max-width: 94px;
+    border-top: 2px solid #006948;
+    box-sizing: border-box;
+    min-height: 108px;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-radius: 2px 2px 0 0;
+    justify-content: flex-start;
+    background-image: linear-gradient(NaNdeg, #00694833 0%, #0069480d 100%);
+}
+
+.warung-pos-dashboard-8y-frame-background-horizontal-mp,
+.warung-pos-dashboard-8y-frame-background-horizontal-pm {
+    min-height: 148px;
+}
+
+.warung-pos-dashboard-8y-frame-background-horizontal-mp {
+    min-height: 121px;
+}
+
+.warung-pos-dashboard-8y-frame-background-horizontal-rw {
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    min-height: 188px;
+    align-items: flex-start;
+    flex-shrink: 1;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-background-horizontal-rw,
+.warung-pos-dashboard-8y-frame-background-horizontal-tp,
+.warung-pos-dashboard-8y-frame-background-horizontal-yw {
+    max-width: 94px;
+    border-top: 2px solid #006948;
+    border-radius: 2px 2px 0 0;
+    background-image: linear-gradient(NaNdeg, #00694833 0%, #0069480d 100%);
+}
+
+.warung-pos-dashboard-8y-frame-background-horizontal-yw {
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    min-height: 229px;
+    align-items: flex-start;
+    flex-shrink: 1;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-background-horizontal-tp {
+    min-height: 256px;
+}
+
+.warung-pos-dashboard-8y-frame-background-horizontal-t2,
+.warung-pos-dashboard-8y-frame-background-horizontal-tp,
+.warung-pos-dashboard-8y-frame-table-area-y6 {
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-background-horizontal-t2 {
+    max-width: 94px;
+    border-top: 2px solid #006948;
+    min-height: 161px;
+    border-radius: 2px 2px 0 0;
+    background-image: linear-gradient(NaNdeg, #00694833 0%, #0069480d 100%);
+}
+
+.warung-pos-dashboard-8y-frame-table-area-y6 {
+    display: flex;
+    position: relative;
+    max-width: 356px;
+    border-top: 1px solid #bccac0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    min-height: 400px;
+    border-left: 1px solid #bccac0;
+    border-right: 1px solid #bccac0;
+    border-bottom: 1px solid #bccac0;
+    border-radius: 12px 12px 12px 12px;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.warung-pos-dashboard-8y-frame-horizontal-border97 {
+    gap: 2.842170943040401e-14px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 24px;
+    position: relative;
+    max-width: 354px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 1px solid #bccac0;
+    justify-content: space-between;
+}
+
+.warung-pos-dashboard-8y-frame-heading3k8 {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: 0 72px 0 0;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-text-f11 {
+    width: 100%;
+    max-width: 99.83000183105469px;
+    margin-top: 0;
+    min-height: 56px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-f12,
+.warung-pos-dashboard-8y-text-f13 {
+    color: #171d19;
+    font-size: 18px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-link-q2 {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: 0 35px 0 0;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-text131 {
+    width: 100%;
+    max-width: 46.06999969482422px;
+    margin-top: 0;
+    min-height: 40px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text132,
+.warung-pos-dashboard-8y-text133 {
+    color: #006948;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container-c4 {
+    width: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+    max-width: 354px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-table-body3d {
+    width: 338px;
+    max-width: 338px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-data-zc,
+.warung-pos-dashboard-8y-frame-row-ee,
+.warung-pos-dashboard-8y-frame-table-body3d {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-row-ee {
+    gap: 5.6843418860808015e-14px;
+    width: 100%;
+    max-width: 338px;
+    align-self: stretch;
+    border-bottom: 1px solid rgba(188, 202, 192, .5);
+    justify-content: center;
+}
+
+.warung-pos-dashboard-8y-frame-data-zc {
+    width: 134px;
+    padding: 12px 16px;
+    max-width: 134px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container-ob {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-trx0912-da1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-trx0912-da2 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container29 {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text1045r81 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text1045r82 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container56,
+.warung-pos-dashboard-8y-frame-data-g7 {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-data-g7 {
+    width: 151px;
+    padding: 14px 16px 15px;
+    max-width: 151px;
+}
+
+.warung-pos-dashboard-8y-frame-container56 {
+    width: 100%;
+    max-width: 119px;
+    align-self: stretch;
+}
+
+.warung-pos-dashboard-8y-text-u51 {
+    width: 100%;
+    max-width: 79.69000244140625px;
+    margin-top: 0;
+    min-height: 24px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-u52 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-background-fk {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: 3px 8px;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    justify-content: flex-end;
+    background-color: #e9efe9;
+}
+
+.warung-pos-dashboard-8y-text4j1 {
+    width: 100%;
+    max-width: 32.91999816894531px;
+    margin-top: 0;
+    min-height: 10px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text4j2 {
+    color: #3d4a42;
+    font-size: 10px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Nimbus Sans", sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-data-v4,
+.warung-pos-dashboard-8y-frame-row-k3 {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-row-k3 {
+    gap: 5.6843418860808015e-14px;
+    width: 100%;
+    max-width: 338px;
+    align-self: stretch;
+    border-bottom: 1px solid rgba(188, 202, 192, .5);
+    justify-content: center;
+}
+
+.warung-pos-dashboard-8y-frame-data-v4 {
+    width: 134px;
+    padding: 13px 16px;
+    max-width: 134px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container-y1 {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-trx0913921 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-trx0913922 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container-bz {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text1112n01 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text1112n02 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container0y,
+.warung-pos-dashboard-8y-frame-data-px {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-data-px {
+    width: 151px;
+    padding: 15px 16px;
+    max-width: 151px;
+}
+
+.warung-pos-dashboard-8y-frame-container0y {
+    width: 100%;
+    max-width: 119px;
+    align-self: stretch;
+}
+
+.warung-pos-dashboard-8y-text4r1 {
+    width: 100%;
+    max-width: 86.33999633789062px;
+    margin-top: 0;
+    min-height: 24px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text4r2 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-background-ew {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: 3px 8px;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    justify-content: flex-end;
+    background-color: #d9e3f7;
+}
+
+.warung-pos-dashboard-8y-text-ay1 {
+    width: 100%;
+    max-width: 26.530000686645508px;
+    margin-top: 0;
+    min-height: 10px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-ay2 {
+    color: #121c2a;
+    font-size: 10px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Nimbus Sans", sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-data-x0,
+.warung-pos-dashboard-8y-frame-row-zx {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-row-zx {
+    gap: 5.6843418860808015e-14px;
+    width: 100%;
+    max-width: 338px;
+    align-self: stretch;
+    border-bottom: 1px solid rgba(188, 202, 192, .5);
+    justify-content: center;
+}
+
+.warung-pos-dashboard-8y-frame-data-x0 {
+    width: 134px;
+    padding: 13px 16px;
+    max-width: 134px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container-lz {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-trx0914j21 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-trx0914j22 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container81 {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text1230541 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text1230542 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container-r6,
+.warung-pos-dashboard-8y-frame-data-u3 {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-data-u3 {
+    width: 151px;
+    padding: 15px 16px;
+    max-width: 151px;
+}
+
+.warung-pos-dashboard-8y-frame-container-r6 {
+    width: 100%;
+    max-width: 119px;
+    align-self: stretch;
+}
+
+.warung-pos-dashboard-8y-text-g51 {
+    width: 100%;
+    max-width: 75.83000183105469px;
+    margin-top: 0;
+    min-height: 24px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-g52 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-background-el {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: 3px 8px;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    justify-content: flex-end;
+    background-color: #e9efe9;
+}
+
+.warung-pos-dashboard-8y-text-pm1 {
+    width: 100%;
+    max-width: 32.91999816894531px;
+    margin-top: 0;
+    min-height: 10px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-pm2 {
+    color: #3d4a42;
+    font-size: 10px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Nimbus Sans", sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-data-bo,
+.warung-pos-dashboard-8y-frame-row0n {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-row0n {
+    gap: 5.6843418860808015e-14px;
+    width: 100%;
+    max-width: 338px;
+    align-self: stretch;
+    border-bottom: 1px solid rgba(188, 202, 192, .5);
+    justify-content: center;
+}
+
+.warung-pos-dashboard-8y-frame-data-bo {
+    width: 134px;
+    padding: 13px 16px;
+    max-width: 134px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container-mp {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-trx0915-xq1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-trx0915-xq2 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container8r {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text1315-js1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text1315-js2 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container5u,
+.warung-pos-dashboard-8y-frame-data-ut {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-data-ut {
+    width: 151px;
+    padding: 15px 16px;
+    max-width: 151px;
+}
+
+.warung-pos-dashboard-8y-frame-container5u {
+    width: 100%;
+    max-width: 119px;
+    align-self: stretch;
+}
+
+.warung-pos-dashboard-8y-text-qs1 {
+    width: 100%;
+    max-width: 79.25px;
+    margin-top: 0;
+    min-height: 24px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-qs2 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-background-fr {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: 3px 8px;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    justify-content: flex-end;
+    background-color: #ffdad7;
+}
+
+.warung-pos-dashboard-8y-text4q1 {
+    width: 100%;
+    max-width: 37.16999816894531px;
+    margin-top: 0;
+    min-height: 10px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text4q2 {
+    color: #410004;
+    font-size: 10px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Nimbus Sans", sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-data-yw,
+.warung-pos-dashboard-8y-frame-row-tp {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-row-tp {
+    gap: 5.6843418860808015e-14px;
+    width: 100%;
+    max-width: 338px;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.warung-pos-dashboard-8y-frame-data-yw {
+    width: 134px;
+    padding: 12px 16px;
+    max-width: 134px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container-nv {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-trx0916-cu1 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-trx0916-cu2 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container1t {
+    width: 100%;
+    height: auto;
+    max-width: 102px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text1400701 {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text1400702 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container-s4,
+.warung-pos-dashboard-8y-frame-data-vz {
+    height: auto;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-data-vz {
+    width: 151px;
+    padding: 15px 16px 14px;
+    max-width: 151px;
+}
+
+.warung-pos-dashboard-8y-frame-container-s4 {
+    width: 100%;
+    max-width: 119px;
+    align-self: stretch;
+}
+
+.warung-pos-dashboard-8y-text-h31 {
+    width: 100%;
+    max-width: 90.19999694824219px;
+    margin-top: 0;
+    min-height: 24px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-h32 {
+    color: #171d19;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-background62 {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    padding: 3px 8px;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    justify-content: flex-end;
+    background-color: #d9e3f7;
+}
+
+.warung-pos-dashboard-8y-text-v11 {
+    width: 100%;
+    max-width: 58.380001068115234px;
+    margin-top: 0;
+    min-height: 10px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-v12 {
+    color: #121c2a;
+    font-size: 10px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: right;
+    font-family: "Nimbus Sans", sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-header-top08 {
+    gap: 570.3300170898438px;
+    top: 0;
+    left: 260px;
+    width: 1181px;
+    display: flex;
+    padding: 0 32px;
+    position: absolute;
+    max-width: 1181px;
+    box-sizing: border-box;
+    min-height: 64px;
+    align-items: center;
+    border-bottom: 1px solid #bccac0;
+    backdrop-filter: blur(12px);
+    justify-content: space-between;
+    background-color: rgba(245, 251, 245, .8);
+}
+
+.warung-pos-dashboard-8y-frame-container-p7 {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-e61 {
+    width: 100%;
+    max-width: 162.97999572753906px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-e62 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container35,
+.warung-pos-dashboard-8y-frame-container8c {
+    gap: 16px;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container8c {
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-button-xb {
+    display: flex;
+    padding: 8px;
+    position: relative;
+    align-items: center;
+    border-radius: 9999px 9999px 9999px 9999px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.warung-pos-dashboard-8y-frame-button-xb,
+.warung-pos-dashboard-8y-frame-container-fx {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon-qy {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 16px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-button1z {
+    display: flex;
+    padding: 8px;
+    position: relative;
+    align-items: center;
+    border-radius: 9999px 9999px 9999px 9999px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.warung-pos-dashboard-8y-frame-button1z,
+.warung-pos-dashboard-8y-frame-container-d0 {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon-o1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 20px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-vertical-divider-z2 {
+    width: 1px;
+    height: 24px;
+    box-sizing: border-box;
+    background-color: #bccac0;
+}
+
+.warung-pos-dashboard-8y-frame-button-a3 {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-l41 {
+    width: 100%;
+    max-width: 53.65999984741211px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-l42 {
+    color: #006948;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-manager-avatar-w5,
+.warung-pos-dashboard-8y-image-user-avatar76 {
+    overflow: hidden;
+    border-top: 1px solid #bccac0;
+    box-sizing: border-box;
+    align-items: flex-start;
+    border-left: 1px solid #bccac0;
+    border-right: 1px solid #bccac0;
+    border-bottom: 1px solid #bccac0;
+    border-radius: 9999px 9999px 9999px 9999px;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-manager-avatar-w5 {
+    width: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    background-size: cover;
+    background-image: url(./assets/87218.png);
+    background-position: center;
+}
+
+.warung-pos-dashboard-8y-image-user-avatar76 {
+    width: 40px;
+    margin: 0;
+    display: block;
+    max-width: 40px;
+    min-height: 40px;
+    object-fit: cover;
+}
+
+.warung-pos-dashboard-8y-frame-aside-shared1o {
+    top: 0;
+    left: 0;
+    width: 260px;
+    display: flex;
+    padding: 24px 0;
+    position: absolute;
+    max-width: 260px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    min-height: 1024px;
+    align-items: flex-start;
+    border-right: 1px solid #bccac0;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.warung-pos-dashboard-8y-frame-header-brand-cp,
+.warung-pos-dashboard-8y-frame-header-brand-nq {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    max-width: 259px;
+    align-self: stretch;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-header-brand-cp {
+    padding: 0 0 32px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.warung-pos-dashboard-8y-frame-header-brand-nq {
+    gap: 16px;
+    padding: 0 24px;
+    align-items: center;
+}
+
+.warung-pos-dashboard-8y-frame-background-yr {
+    width: 40px;
+    display: flex;
+    position: relative;
+    max-width: 40px;
+    box-sizing: border-box;
+    min-height: 40px;
+    align-items: center;
+    border-radius: 8px 8px 8px 8px;
+    justify-content: center;
+    background-color: #00855d;
+}
+
+.warung-pos-dashboard-8y-frame-container9s {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon-od {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 20.0938720703125px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-container-ze,
+.warung-pos-dashboard-8y-frame-heading15y {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    position: relative;
+    max-width: none;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-heading15y {
+    width: 100%;
+    max-width: 120px;
+    align-self: stretch;
+}
+
+.warung-pos-dashboard-8y-text-ux1 {
+    width: 100%;
+    max-width: 100.30000305175781px;
+    margin-top: 0;
+    min-height: 28px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-ux2 {
+    color: #006948;
+    font-size: 18px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Liberation Sans", sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 0;
+    letter-spacing: -.44999998807907104px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-container-s0 {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-gz1 {
+    width: 100%;
+    max-width: 119.55999755859375px;
+    margin-top: 0;
+    min-height: 16px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-gz2 {
+    color: #555f70;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Liberation Sans", sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 0;
+    letter-spacing: .6000000238418579px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-primary-cta-mt,
+.warung-pos-dashboard-8y-frame-primary-cta-xu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-primary-cta-xu {
+    padding: 0 16px 24px;
+    max-width: 259px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-primary-cta-mt {
+    gap: 8px;
+    padding: 12px 16px;
+    max-width: 227px;
+    align-items: center;
+    border-radius: 8px 8px 8px 8px;
+    justify-content: center;
+    background-color: #006948;
+}
+
+.warung-pos-dashboard-8y-frame-container-jw {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon8v {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 11.6666259765625px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-pq1 {
+    width: 100%;
+    max-width: 104.27999877929688px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-pq2 {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: center;
+    font-family: "Liberation Sans", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-navigation-links-ep {
+    gap: 4px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    max-width: 259px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-link1 {
+    display: contents;
+}
+
+.warung-pos-dashboard-8y-frame-link-p9 {
+    gap: 12px;
+    width: 100%;
+    cursor: pointer;
+    height: auto;
+    display: flex;
+    padding: 12px 16px;
+    position: relative;
+    max-width: 259px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container0a {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon-bb {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 18px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-mc1 {
+    width: 100%;
+    max-width: 68.5px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-mc2 {
+    color: #555f70;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Liberation Sans", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-link2 {
+    display: contents;
+}
+
+.warung-pos-dashboard-8y-frame-link-xd {
+    gap: 12px;
+    width: 100%;
+    cursor: pointer;
+    height: auto;
+    display: flex;
+    padding: 12px 16px;
+    position: relative;
+    max-width: 259px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container8e {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon-jf {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 20px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-ug1 {
+    width: 100%;
+    max-width: 109.7300033569336px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-ug2 {
+    color: #555f70;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Liberation Sans", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-link-active5h {
+    gap: 12px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 12px 16px;
+    position: relative;
+    max-width: 259px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    border-left: 4px solid #006948;
+    justify-content: flex-start;
+    background-color: #e9efe9;
+}
+
+.warung-pos-dashboard-8y-frame-container-gi {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon1g {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 20px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-qf1 {
+    width: 100%;
+    max-width: 95.94999694824219px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-qf2 {
+    color: #006948;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Liberation Sans", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-link3 {
+    display: contents;
+}
+
+.warung-pos-dashboard-8y-frame-link-fe {
+    gap: 12px;
+    width: 100%;
+    cursor: pointer;
+    height: auto;
+    display: flex;
+    padding: 12px 16px;
+    position: relative;
+    max-width: 259px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container4d {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon9k {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 22px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-yj1 {
+    width: 100%;
+    max-width: 114.41000366210938px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-yj2 {
+    color: #555f70;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Liberation Sans", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-link4 {
+    display: contents;
+}
+
+.warung-pos-dashboard-8y-frame-link-ni {
+    gap: 12px;
+    width: 100%;
+    cursor: pointer;
+    height: auto;
+    display: flex;
+    padding: 12px 16px;
+    position: relative;
+    max-width: 259px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container-ch {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon-ho {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 18px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text6n1 {
+    width: 100%;
+    max-width: 119.11000061035156px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text6n2 {
+    color: #555f70;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Liberation Sans", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-link5 {
+    display: contents;
+}
+
+.warung-pos-dashboard-8y-frame-link-kb {
+    gap: 12px;
+    width: 100%;
+    cursor: pointer;
+    height: auto;
+    display: flex;
+    padding: 12px 16px;
+    position: relative;
+    max-width: 259px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container-vc {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon-y9 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 22px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-frame-container9a {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-c71 {
+    width: 100%;
+    max-width: 121.83999633789062px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-c72 {
+    color: #3d4a42;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.warung-pos-dashboard-8y-frame-footer-links-n8 {
+    gap: 4px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 16px 16px 0;
+    position: relative;
+    max-width: 259px;
+    align-self: stretch;
+    border-top: 1px solid #bccac0;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-link6 {
+    display: contents;
+}
+
+.warung-pos-dashboard-8y-frame-link-q5 {
+    gap: 12px;
+    width: 100%;
+    cursor: pointer;
+    height: auto;
+    display: flex;
+    padding: 12px 16px;
+    position: relative;
+    max-width: 227px;
+    align-self: stretch;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.warung-pos-dashboard-8y-frame-container16 {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-vector-icon0j {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    max-width: 18px;
+    box-sizing: border-box;
+}
+
+.warung-pos-dashboard-8y-text-logout-bk1 {
+    width: 100%;
+    max-width: 42.83000183105469px;
+    margin-top: 0;
+    min-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.warung-pos-dashboard-8y-text-logout-bk2 {
+    color: #110606;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Liberation Sans", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+    .warung-pos-dashboard-8y-frame-container9f {
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    ;
+}

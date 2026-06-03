@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WarungPOS - Transfer Bank</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#121c2a",
+                      "secondary-fixed-dim": "#bdc7db",
+                      "on-secondary-container": "#596374",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#d5dcd6",
+                      "on-tertiary-fixed-variant": "#7f2928",
+                      "on-primary": "#ffffff",
+                      "on-surface": "#171d19",
+                      "surface-variant": "#dee4de",
+                      "surface-container": "#e9efe9",
+                      "surface-container-low": "#eff5ef",
+                      "on-primary-container": "#f5fff7",
+                      "outline-variant": "#bccac0",
+                      "surface-container-highest": "#dee4de",
+                      "primary": "#006948",
+                      "on-error-container": "#93000a",
+                      "error": "#ba1a1a",
+                      "error-container": "#ffdad6",
+                      "surface": "#f5fbf5",
+                      "on-tertiary-container": "#fffbff",
+                      "secondary-container": "#d6e0f4",
+                      "on-surface-variant": "#3d4a42",
+                      "outline": "#6d7a72",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed": "#d9e3f7",
+                      "on-secondary-fixed-variant": "#3d4757",
+                      "on-primary-fixed-variant": "#005137",
+                      "surface-bright": "#f5fbf5",
+                      "inverse-surface": "#2c322e",
+                      "background": "#f5fbf5",
+                      "on-tertiary-fixed": "#410004",
+                      "primary-fixed-dim": "#68dba9",
+                      "tertiary-container": "#ba5551",
+                      "surface-tint": "#006c4a",
+                      "primary-container": "#00855d",
+                      "on-primary-fixed": "#002114",
+                      "surface-container-high": "#e4eae4",
+                      "tertiary": "#9b3e3b",
+                      "secondary": "#555f70",
+                      "primary-fixed": "#85f8c4",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#ecf2ec",
+                      "on-background": "#171d19",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb3ae",
+                      "inverse-primary": "#68dba9",
+                      "tertiary-fixed": "#ffdad7"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-max": "1440px",
+                      "gutter": "24px",
+                      "margin-page": "32px",
+                      "sidebar-width": "260px"
+              },
+              "fontFamily": {
+                      "label-uppercase": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "display-sm": [
+                              "Inter"
+                      ],
+                      "body-base": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label-uppercase": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-base": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased flex items-center justify-center min-h-screen p-margin-page">
+<!-- Modal Backdrop Overlay -->
+<div class="fixed inset-0 bg-on-background/40 backdrop-blur-sm z-40"></div>
+<!-- Modal Container -->
+<div class="relative bg-surface rounded-xl shadow-[0_10px_25px_rgba(0,0,0,0.1)] w-full max-w-2xl z-50 overflow-hidden flex flex-col max-h-[921px]">
+<!-- Header -->
+<div class="px-6 py-8 bg-surface-container-low border-b border-surface-variant flex flex-col items-center justify-center">
+<h2 class="font-body-sm text-body-sm text-on-surface-variant mb-2">Total Tagihan</h2>
+<div class="font-display-sm text-display-sm text-primary">Rp 150.000</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="flex border-b border-surface-variant bg-surface">
+<button class="flex-1 py-4 flex items-center justify-center gap-2 text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-sm text-body-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">payments</span>
+                Tunai
+            </button>
+<button class="flex-1 py-4 flex items-center justify-center gap-2 text-on-surface-variant hover:bg-surface-container-low transition-colors font-body-sm text-body-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">qr_code_scanner</span>
+                E-Wallet (QRIS)
+            </button>
+<button class="flex-1 py-4 flex items-center justify-center gap-2 text-primary border-b-2 border-primary bg-primary/5 font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+                Transfer Bank
+            </button>
+</div>
+<!-- Main Content Scrollable Area -->
+<div class="p-6 overflow-y-auto flex-1 flex flex-col gap-6">
+<!-- Bank List -->
+<div class="flex flex-col gap-4">
+<!-- Bank Card 1: BCA -->
+<div class="border border-surface-variant rounded-lg p-4 flex items-center gap-4 bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-12 bg-surface-variant rounded flex items-center justify-center overflow-hidden shrink-0">
+<img alt="BCA Logo" class="object-cover w-full h-full" data-alt="A minimal placeholder logo for a fictional bank 'BCA', featuring simple blue text on a light gray background, clean and corporate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPkSKrw4u_ZXka0taRN2vXy_ea1huk11McDvWoOohBfN4irbqDq-G-PbheiHnj9s5FhlusXxv9KA73kEmor_QzjDEUrOZrFBLZXAx0B2Y46PW71uRlB92ebqr0zufQnc_0Pujqk8GtTTKaONebzj_KwP5H1JTEQBurhNUVcQ5yfjLfA6m_NqQj64rS6Uh_1U5CzET8gIN_9qYavBPm5Y0nOj4Zc4uVD_ZVoSaH-k1eeup4WULuFcTc3qG-KuEv36L2tywwKeNwR9Hu"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant mb-1">Bank Central Asia (BCA)</div>
+<div class="font-headline-md text-headline-md text-on-surface truncate">8830123456</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Atas Nama: WarungPOS / Heru Ismawan</div>
+</div>
+<button aria-label="Copy account number" class="p-2 text-primary hover:bg-primary-container/10 rounded-full transition-colors flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">content_copy</span>
+</button>
+</div>
+<!-- Bank Card 2: Mandiri -->
+<div class="border border-surface-variant rounded-lg p-4 flex items-center gap-4 bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-12 bg-surface-variant rounded flex items-center justify-center overflow-hidden shrink-0">
+<img alt="Mandiri Logo" class="object-cover w-full h-full" data-alt="A minimal placeholder logo for a fictional bank 'MDR', featuring simple blue text on a light gray background, clean and corporate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyEVCMdx1YJNPgmKfHXsfSAnwSdOehIsELtQxqyBedhlToGdrNKI9O5MoUlpJJkNNGRbiujfMkupFxiHdIbmVYd6C_PJA0ZMa6fEdmnTeVFEv62S2T1embsagMKNlb1GOpORLQ_RNt6_9-jyDBnR-n_xACnNL2r8FKI_33ZxbImPhBJkTWMC_7CLXv2PKpGX1MfeZ_0J5STXy1bWt98jG-FIeQq6roWXTf5iZ4V3O4uH9hLDzRwLFCvqrcsPlXhBZ1HeAKemNEIQWh"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant mb-1">Bank Mandiri</div>
+<div class="font-headline-md text-headline-md text-on-surface truncate">1370012345678</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Atas Nama: WarungPOS / Heru Ismawan</div>
+</div>
+<button aria-label="Copy account number" class="p-2 text-primary hover:bg-primary-container/10 rounded-full transition-colors flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">content_copy</span>
+</button>
+</div>
+<!-- Bank Card 3: BRI -->
+<div class="border border-surface-variant rounded-lg p-4 flex items-center gap-4 bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-12 bg-surface-variant rounded flex items-center justify-center overflow-hidden shrink-0">
+<img alt="BRI Logo" class="object-cover w-full h-full" data-alt="A minimal placeholder logo for a fictional bank 'BRI', featuring simple blue text on a light gray background, clean and corporate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWqqnspfAg4rs7MrKQO8KAGUyTgj-iGOZmGIEU8Tzz-je8SLUa989UxnxDc9CrJWPfeEuSS5eHuKSF0qtemZFpyxAlci214tbjDMg9Y8lFCN94cRaIr9_zS7WXljhFqcEfkpOebgx3XFw1odpA_vp3dAkPBvQKmmr6p-_9LtJxxN8XJRAwbDqSRnN_IBICE7eZuwEW1X_kHO-nfxF_c8cqJ6vNDbp9RY-VMooV10dajF5SYy5zWNLR-EDthesyjdrm_Fr9wC3Lol-A"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-label-uppercase text-label-uppercase text-on-surface-variant mb-1">Bank Rakyat Indonesia (BRI)</div>
+<div class="font-headline-md text-headline-md text-on-surface truncate">001201023456789</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Atas Nama: WarungPOS / Heru Ismawan</div>
+</div>
+<button aria-label="Copy account number" class="p-2 text-primary hover:bg-primary-container/10 rounded-full transition-colors flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Instructions & Upload -->
+<div class="bg-surface-container p-4 rounded-lg flex flex-col gap-4">
+<div class="flex gap-3 text-on-surface-variant items-start">
+<span class="material-symbols-outlined text-primary shrink-0" style="font-variation-settings: 'FILL' 0;">info</span>
+<p class="font-body-sm text-body-sm">Silahkan transfer tepat sesuai nominal Total Tagihan. Pembayaran akan terverifikasi otomatis dalam 1-3 menit.</p>
+</div>
+<button class="w-full border-2 border-dashed border-outline-variant hover:border-primary hover:bg-primary/5 rounded-lg py-6 flex flex-col items-center justify-center gap-2 transition-all group">
+<div class="w-10 h-10 rounded-full bg-surface-variant group-hover:bg-primary/10 flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">upload_file</span>
+</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface-variant group-hover:text-primary transition-colors">Unggah Bukti Transfer</span>
+</button>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="p-6 border-t border-surface-variant bg-surface flex justify-end gap-4">
+<button class="px-6 py-2.5 rounded border border-outline text-on-surface hover:bg-surface-container-low font-body-sm text-body-sm font-semibold transition-colors">
+                Batal
+            </button>
+<button class="px-6 py-2.5 rounded bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-body-sm text-body-sm font-semibold transition-colors shadow-sm">
+                Konfirmasi Pembayaran
+            </button>
+</div>
+</div>
+</body></html>

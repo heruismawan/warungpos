@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WarungPOS - Transaksi Kasir</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "tertiary-fixed": "#ffdad7",
+                            "tertiary-fixed-dim": "#ffb3ae",
+                            "on-primary": "#ffffff",
+                            "error": "#ba1a1a",
+                            "on-secondary": "#ffffff",
+                            "secondary-fixed-dim": "#bdc7db",
+                            "secondary": "#555f70",
+                            "on-surface": "#171d19",
+                            "on-secondary-fixed-variant": "#3d4757",
+                            "on-tertiary-fixed": "#410004",
+                            "inverse-on-surface": "#ecf2ec",
+                            "primary-container": "#00855d",
+                            "on-secondary-fixed": "#121c2a",
+                            "inverse-primary": "#68dba9",
+                            "surface-container-highest": "#dee4de",
+                            "on-primary-fixed-variant": "#005137",
+                            "on-primary-container": "#f5fff7",
+                            "surface-container-high": "#e4eae4",
+                            "surface-variant": "#dee4de",
+                            "secondary-fixed": "#d9e3f7",
+                            "surface": "#f5fbf5",
+                            "on-primary-fixed": "#002114",
+                            "tertiary-container": "#ba5551",
+                            "primary-fixed": "#85f8c4",
+                            "background": "#f5fbf5",
+                            "secondary-container": "#d6e0f4",
+                            "primary": "#006948",
+                            "on-tertiary-fixed-variant": "#7f2928",
+                            "surface-dim": "#d5dcd6",
+                            "surface-container-low": "#eff5ef",
+                            "on-surface-variant": "#3d4a42",
+                            "on-secondary-container": "#596374",
+                            "surface-bright": "#f5fbf5",
+                            "tertiary": "#9b3e3b",
+                            "inverse-surface": "#2c322e",
+                            "on-error-container": "#93000a",
+                            "on-error": "#ffffff",
+                            "outline": "#6d7a72",
+                            "on-tertiary": "#ffffff",
+                            "surface-tint": "#006c4a",
+                            "primary-fixed-dim": "#68dba9",
+                            "on-tertiary-container": "#fffbff",
+                            "on-background": "#171d19",
+                            "outline-variant": "#bccac0",
+                            "surface-container-lowest": "#ffffff",
+                            "error-container": "#ffdad6",
+                            "surface-container": "#e9efe9"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "unit": "8px",
+                            "container-max": "1440px",
+                            "sidebar-width": "260px",
+                            "margin-page": "32px",
+                            "gutter": "24px"
+                    },
+                    "fontFamily": {
+                            "label-uppercase": ["Inter", "sans-serif"],
+                            "display-sm": ["Inter", "sans-serif"],
+                            "body-base": ["Inter", "sans-serif"],
+                            "headline-md": ["Inter", "sans-serif"],
+                            "body-sm": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                            "label-uppercase": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                            "display-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                            "body-base": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                            "headline-md": ["18px", { "lineHeight": "28px", "fontWeight": "600" }],
+                            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Fallback material symbol font if CDN fails quickly */
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-base antialiased h-screen overflow-hidden flex">
+<!-- Shared Component: SideNavBar -->
+<aside class="fixed left-0 top-0 h-screen w-sidebar-width border-r border-outline-variant bg-surface-container-lowest shadow-[0_1px_3px_rgba(0,0,0,0.05)] flex flex-col py-6 z-50">
+<!-- Header / Brand -->
+<div class="px-6 mb-8 flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<div>
+<h1 class="text-primary font-headline-md text-headline-md tracking-tight">WarungPOS</h1>
+<p class="text-secondary font-body-sm text-label-uppercase">Retail Management</p>
+</div>
+</div>
+<!-- Primary CTA -->
+<div class="px-4 mb-6">
+<button class="w-full flex items-center justify-center gap-2 bg-primary text-on-primary py-3 px-4 rounded-lg font-headline-md text-body-sm hover:bg-surface-tint active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[20px]">add</span>
+                New Transaction
+            </button>
+</div>
+<!-- Navigation Links -->
+<nav class="flex flex-col flex-1 gap-1">
+<a class="flex items-center gap-3 px-4 py-3 text-secondary border-l-4 border-transparent font-body-base text-body-sm hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                Dashboard
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-secondary border-l-4 border-transparent font-body-base text-body-sm hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+                Inventaris Barang
+            </a>
+<!-- ACTIVE STATE LOGIC applied to Transaksi Kasir -->
+<a class="flex items-center gap-3 px-4 py-3 text-primary bg-surface-container border-l-4 border-primary font-headline-md text-body-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">point_of_sale</span>
+                Transaksi Kasir
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-secondary border-l-4 border-transparent font-body-base text-body-sm hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">payments</span>
+                Manajemen Utang
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-secondary border-l-4 border-transparent font-body-base text-body-sm hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">assessment</span>
+                Laporan Keuangan
+            </a>
+</nav>
+<!-- Footer Links -->
+<div class="mt-auto px-4 flex flex-col gap-1 border-t border-outline-variant pt-4">
+<a class="flex items-center gap-3 px-4 py-3 text-secondary border-l-4 border-transparent font-body-base text-body-sm hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+                Settings
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-error border-l-4 border-transparent font-body-base text-body-sm hover:bg-error-container transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">logout</span>
+                Logout
+            </a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 ml-sidebar-width flex flex-col h-screen overflow-hidden">
+<!-- Shared Component: TopAppBar -->
+<header class="fixed top-0 right-0 w-[calc(100%-260px)] h-16 z-40 bg-surface-container-lowest/80 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-8">
+<!-- Contextual Search for POS -->
+<div class="flex-1 max-w-2xl">
+<div class="relative flex items-center w-full h-10 rounded-full bg-surface focus-within:bg-surface-container-lowest border border-outline-variant focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all overflow-hidden">
+<div class="pl-4 pr-2 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+</div>
+<input autofocus="" class="w-full h-full bg-transparent border-none focus:ring-0 text-on-surface font-body-base text-body-sm placeholder-secondary outline-none" placeholder="Scan Barcode atau Cari Produk..." type="text"/>
+<div class="pr-2 flex items-center">
+<button class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">search</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-4 ml-8">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-secondary hover:text-primary hover:bg-surface-container transition-colors relative cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-secondary hover:text-primary hover:bg-surface-container transition-colors cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+<div class="h-6 w-[1px] bg-outline-variant mx-2"></div>
+<button class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+<div class="text-right hidden md:block">
+<p class="font-headline-md text-body-sm text-on-surface">Budi Santoso</p>
+<p class="font-body-base text-[11px] text-secondary">Manager</p>
+</div>
+<img alt="Manager Avatar" class="w-10 h-10 rounded-full border-2 border-surface-container object-cover" data-alt="A close-up studio portrait of a professional Asian male in his late 30s, wearing a crisp modern uniform shirt. The lighting is bright and even, casting soft shadows to emphasize a clean, corporate retail environment aesthetic. The background is a solid, neutral soft gray to maintain focus on the subject. The mood is confident, approachable, and efficient, aligning with a high-end enterprise management interface style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ8Ywt7hsjtbkT_Aj8M_dUPOvhhjUrIXOxnCy_8_apR_FlL_6KgtNnfoOb_qTTChaH8mMudr58aGxnC11vZAJ6ItOqQucSwtA4_e5wdZYuVphbDs3XBTQsIWpL3GUu4818Q_GMrt8BKsMnqRiXu1vwomI36wc5m3xUCsw03jCYgPrpkZRWcWvlj9t1pVM2Tx4gs_BNJkhr4IKtlf_HCQjS1jJhIZOFI7fXXaQ7BvF-K1fUGb2nTpXQapAD5ov3Q7H1lwEXwbMppFWC"/>
+</button>
+</div>
+</header>
+<!-- POS Workspace -->
+<main class="flex-1 flex mt-16 p-margin-page gap-gutter h-[calc(100vh-64px)] bg-background overflow-hidden">
+<!-- Left Panel: Product Grid -->
+<section class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_1px_3px_rgba(0,0,0,0.05)] overflow-hidden">
+<!-- Category Filters -->
+<div class="px-6 py-4 border-b border-outline-variant bg-surface flex items-center gap-3 overflow-x-auto no-scrollbar">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary border border-primary font-label-uppercase text-label-uppercase whitespace-nowrap shadow-sm">
+                        Semua Produk
+                    </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-lowest text-secondary border border-outline-variant font-label-uppercase text-label-uppercase whitespace-nowrap hover:bg-surface-container transition-colors">
+                        Makanan Ringan
+                    </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-lowest text-secondary border border-outline-variant font-label-uppercase text-label-uppercase whitespace-nowrap hover:bg-surface-container transition-colors">
+                        Minuman
+                    </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-lowest text-secondary border border-outline-variant font-label-uppercase text-label-uppercase whitespace-nowrap hover:bg-surface-container transition-colors">
+                        Kebutuhan Pokok
+                    </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-lowest text-secondary border border-outline-variant font-label-uppercase text-label-uppercase whitespace-nowrap hover:bg-surface-container transition-colors">
+                        Rokok &amp; Korek
+                    </button>
+</div>
+<!-- Products -->
+<div class="flex-1 p-6 overflow-y-auto grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 auto-rows-max">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant p-3 flex flex-col gap-3 hover:border-primary transition-colors cursor-pointer relative shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="aspect-square bg-surface rounded-md overflow-hidden relative">
+<img alt="Indomie Goreng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A well-lit, top-down product photography shot of a commercial instant noodle packet resting on a clean, stark white background. The packaging is vibrant with bold red and yellow graphic elements, cleanly isolated without any props or distractions. The lighting is soft and diffused to prevent harsh glare on the plastic wrapper, fitting a minimalist e-commerce or point-of-sale inventory catalog aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv6kWjOQ5VwIgDPgIBSGWh3pafqDW6NdmSFsomGnf3aRR09TE6IAFzneEi6U3dvAvI9nAzRhznaMpOsrumE19GSWMOZqfsCSmbZ-lrQEhRZg8Frer4xH-_fCMaNxoKRGNX1Iq3G41fs7_Cp-IznEFgHnNIpUGM2A9tMrI9BWrlnDizQGIxzlLgvTq_bH8Ckiu3Y-GO3rrj8T3tMVwVds_B1QrGLqq4iW-Kxy_-roDIfifzvJdUeHQSuM9MwbMtMyU1nVo0eD2CHNKS"/>
+</div>
+<div class="flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-md text-body-sm text-on-surface line-clamp-2 leading-tight">Indomie Mi Goreng Spesial</h3>
+<p class="font-body-base text-[12px] text-secondary mt-1">Stock: 142</p>
+</div>
+<div class="flex justify-between items-end mt-3">
+<span class="font-headline-md text-body-base text-primary">Rp 3.500</span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant p-3 flex flex-col gap-3 hover:border-primary transition-colors cursor-pointer relative shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="aspect-square bg-surface rounded-md overflow-hidden relative">
+<img alt="Teh Pucuk Harum" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A professional studio shot of a branded plastic bottle of iced tea, perfectly centered against a pure, bright white backdrop. The bottle is slightly chilled, showing very subtle condensation to suggest freshness. The lighting is even and bright, eliminating shadows to create a clean, uniform look suitable for a digital retail inventory system or catalog. The liquid inside is a rich amber color." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAocvuQbOiBfMwWfv_3LpB0ClIUkg_Rg1fyBgyzu-xfdRJkvCUJDYkIKHPBlfnZNZ7uFkAp55Rzkif2TzPDtR-PqzJb5CsZtUDL1yFIW3ZYWKeh_7IxoytlUNu18r-fTQFnWHrZRQQ1kOwaCIpfrkZR0RhL8ysBaAGqsVeuKRB3STnMY7yCieUpZIXX500ShpMV-F_-nNBAXoE00GrLLdxyp_NDQ264aNH-WY4viS-EOCUMHZdjccEKHZUrt3wF7yWLbQmCu0BRyy8q"/>
+</div>
+<div class="flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-md text-body-sm text-on-surface line-clamp-2 leading-tight">Teh Pucuk Harum 350ml</h3>
+<p class="font-body-base text-[12px] text-secondary mt-1">Stock: 48</p>
+</div>
+<div class="flex justify-between items-end mt-3">
+<span class="font-headline-md text-body-base text-primary">Rp 4.000</span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant p-3 flex flex-col gap-3 hover:border-primary transition-colors cursor-pointer relative shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="aspect-square bg-surface rounded-md overflow-hidden relative flex items-center justify-center p-4">
+<img alt="Beras Ramos" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="A high-quality product image of a closed 5kg sack of premium white rice. The sack features minimal graphic design with a predominant white and green color scheme. It is positioned against a seamless, high-key white background. The lighting is controlled to highlight the texture of the packaging material without creating distracting highlights, aligning with a clean, functional retail inventory aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp8ci64NQ0K1dpxQl4LO5VNKbElzYZeECClNfNS45TOwZpXx6rx2ceml6tZ-rFh_U9N1nBQ-fYdlJSH-fS88dWX04FkQkprLY_PObqgaaoOBolx-r7Qx6SgTTCzZSvaThR4RA53hUZeltLJDjYC9x5JcTX_BuTFuaT1ZTfEbhSirt3JjIsXFucQQRjbe0Q85gVQ1e9BzNFycPyjELKBl0jF8I_Mu0VT-jw1b6OsNamyiZOrpQ9zQNKXCrQhU74E1MWKoio-mddlEJX"/>
+</div>
+<div class="flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-md text-body-sm text-on-surface line-clamp-2 leading-tight">Beras Setra Ramos 5kg</h3>
+<p class="font-body-base text-[12px] text-secondary mt-1">Stock: 12</p>
+</div>
+<div class="flex justify-between items-end mt-3">
+<span class="font-headline-md text-body-base text-primary">Rp 68.500</span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant p-3 flex flex-col gap-3 hover:border-primary transition-colors cursor-pointer relative shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="aspect-square bg-surface rounded-md overflow-hidden relative flex items-center justify-center p-4">
+<img alt="Minyak Goreng" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="A clear, brightly lit photograph of a 2-liter plastic pouch of cooking oil standing upright. The cooking oil is a golden yellow hue. The background is a stark, absolute white, providing maximum contrast for the product. The image has a hyper-clean, commercial catalog style with zero background clutter, ensuring the product is instantly recognizable for point-of-sale selection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9QJdGP0EPiip68DtaE-5rzwv1d7RW5JJugXvbmdzJ6ifwlDfGuJnXDpwSkCjAMhV1SKhY3U4CIaRajgGNPXvbeEBa-nVgg5sAqdiG5TEdBQgmJhIFyObZ1Vhl2CJS-eYt0-vvObx1NssuDkmV8AN_gaK2Lsu9aK-eKBb5vKnQjesG3LmBeoFAvwyOVkA2z4uzbvbTJKWjbCFGxgpRtDBhsSJRarLXRB4qsT7Lzggl_ZR-G0Rvc5pDVLTQuo46z_C5mr72Cp7VFSro"/>
+</div>
+<div class="flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-md text-body-sm text-on-surface line-clamp-2 leading-tight">Bimoli Minyak Goreng 2L</h3>
+<p class="font-body-base text-[12px] text-secondary mt-1">Stock: 24</p>
+</div>
+<div class="flex justify-between items-end mt-3">
+<span class="font-headline-md text-body-base text-primary">Rp 34.000</span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Panel: Active Cart -->
+<aside class="w-[380px] bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 overflow-hidden">
+<!-- Cart Header -->
+<div class="px-6 py-4 border-b border-outline-variant flex justify-between items-center bg-surface">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Current Order</h2>
+<p class="font-body-base text-body-sm text-secondary">#INV-20231024-001</p>
+</div>
+<button class="text-error hover:bg-error-container p-2 rounded-md transition-colors flex items-center justify-center" title="Clear Cart">
+<span class="material-symbols-outlined text-[20px]">delete_sweep</span>
+</button>
+</div>
+<!-- Cart Items List -->
+<div class="flex-1 overflow-y-auto p-4 flex flex-col gap-3">
+<!-- Cart Item 1 -->
+<div class="flex gap-3 items-center p-3 rounded-lg border border-outline-variant bg-surface-container-lowest hover:border-primary-container transition-colors">
+<div class="w-12 h-12 bg-surface rounded-md overflow-hidden flex-shrink-0">
+<img alt="Indomie Goreng" class="w-full h-full object-cover" data-alt="A small, square thumbnail image of an instant noodle packet. The lighting is bright and even against a stark white background, designed to be highly legible at very small sizes in a UI sidebar. The vibrant red and yellow packaging is clearly visible. The aesthetic is clean, functional, and purely commercial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2_9BSR4EhvWgcoytURB0WJ1KDEQXIinqk830r1AGfbUXIXkONde73yJ0k32QgOeAQv31d8ML9AdsROhzLwV6mCeVyXh0A-HYY1Vu4DIL9Rv0bWEkczQXjF3m7908l9LaVLlC1AlDzh5J0ExGSRy_fZlwSAezHD9Mit037Jvnx56h05MJQXaR7f80YPrzJPvv-4QCKgZ9Mlz7WyE1XM580UDeoxjFIMmnKHS-_MrAB7jWUD8WSOaGim3bW1hPzjpGxZuKXFOxlp9P2"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-md text-[13px] text-on-surface truncate">Indomie Mi Goreng Spesial</h4>
+<p class="font-headline-md text-body-sm text-primary mt-0.5">Rp 7.000</p>
+</div>
+<div class="flex flex-col items-end gap-2">
+<button class="text-secondary hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="flex items-center bg-surface-container rounded border border-outline-variant">
+<button class="w-7 h-7 flex items-center justify-center text-secondary hover:text-on-surface hover:bg-surface-dim transition-colors rounded-l">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="w-8 text-center font-headline-md text-[13px] text-on-surface">2</span>
+<button class="w-7 h-7 flex items-center justify-center text-secondary hover:text-on-surface hover:bg-surface-dim transition-colors rounded-r">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Cart Item 2 -->
+<div class="flex gap-3 items-center p-3 rounded-lg border border-outline-variant bg-surface-container-lowest hover:border-primary-container transition-colors">
+<div class="w-12 h-12 bg-surface rounded-md overflow-hidden flex-shrink-0">
+<img alt="Teh Pucuk Harum" class="w-full h-full object-cover" data-alt="A small, square thumbnail image of an iced tea plastic bottle. Brightly lit against a pure white background for maximum contrast and readability at small dimensions. The amber liquid and branded label are distinct. The style is strictly commercial inventory photography, lacking any artistic shadows or context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgePLDtn3sB_Ue5dgS0-UPAVbVZlddXls1d7IqoPolX04kZtRSBiML4-Rcs9aUY5Q2s9qi_R3TNwQtMEQAFT-O5CKMS72W8LwRYyn9hGQChRq6rayVxZsgRaSdXUVbuhoZLJ-1XMmt0xVj8Xc4njTAxpYR-N17zAAznYaUwM1J_m5NooGsoIwZGTStWJmd2cI8ttPb9FKIEsJLT9_l3uHxSMIp2cujQsGjLexJY5gql44ppMmY-mG-gmVAzZQp_d7LRew9sjYGEtN_"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-md text-[13px] text-on-surface truncate">Teh Pucuk Harum 350ml</h4>
+<p class="font-headline-md text-body-sm text-primary mt-0.5">Rp 4.000</p>
+</div>
+<div class="flex flex-col items-end gap-2">
+<button class="text-secondary hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="flex items-center bg-surface-container rounded border border-outline-variant">
+<button class="w-7 h-7 flex items-center justify-center text-secondary hover:text-on-surface hover:bg-surface-dim transition-colors rounded-l">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="w-8 text-center font-headline-md text-[13px] text-on-surface">1</span>
+<button class="w-7 h-7 flex items-center justify-center text-secondary hover:text-on-surface hover:bg-surface-dim transition-colors rounded-r">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Checkout Footer -->
+<div class="p-6 border-t border-outline-variant bg-surface-container-lowest flex flex-col gap-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.02)] relative z-10">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center text-secondary font-body-base text-body-sm">
+<span>Subtotal</span>
+<span class="font-headline-md text-on-surface">Rp 11.000</span>
+</div>
+<div class="flex justify-between items-center text-secondary font-body-base text-body-sm">
+<span>Tax (11%)</span>
+<span class="font-headline-md text-on-surface">Rp 1.210</span>
+</div>
+<div class="flex justify-between items-center text-secondary font-body-base text-body-sm">
+<span>Discount</span>
+<span class="font-headline-md text-primary">- Rp 0</span>
+</div>
+</div>
+<div class="h-[1px] w-full bg-outline-variant border-dashed border-b border-outline-variant"></div>
+<div class="flex justify-between items-end mt-1 mb-2">
+<span class="font-body-base text-body-base text-on-surface">Total Payable</span>
+<span class="font-headline-md text-display-sm text-primary tracking-tight">Rp 12.210</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-headline-md text-headline-md flex items-center justify-center gap-2 hover:bg-surface-tint hover:shadow-lg active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined">payments</span>
+                        Proses Bayar
+                    </button>
+</div>
+</aside>
+</main>
+</div>
+</body></html>
