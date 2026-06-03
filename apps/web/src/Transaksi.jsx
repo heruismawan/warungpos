@@ -14,6 +14,7 @@ export default function Transaksi() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Semua');
   const [categories, setCategories] = useState(['Semua', 'Kebutuhan Pokok', 'Minuman', 'Mie Instan', 'Peralatan Mandi', 'Rokok & Korek']);
+  const [activePane, setActivePane] = useState('products'); // 'products' or 'cart'
 
   useEffect(() => {
     fetchProducts();
@@ -66,9 +67,31 @@ export default function Transaksi() {
   return (
     <Layout>
       {/* POS Workspace */}
-      <div className="flex gap-gutter h-[calc(100vh-120px)] overflow-hidden">
+      <div className="flex flex-col lg:flex-row gap-gutter h-[calc(100vh-140px)] lg:h-[calc(100vh-120px)] overflow-hidden relative">
+        {/* Tab Switcher for Mobile */}
+        <div className="flex lg:hidden border border-outline-variant rounded-xl bg-surface-container-lowest overflow-hidden shrink-0">
+          <button 
+            onClick={() => setActivePane('products')}
+            className={`flex-1 py-3 text-center text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all ${
+              activePane === 'products' ? 'bg-primary text-on-primary font-bold' : 'text-on-surface-variant hover:bg-surface-variant/30'
+            }`}
+          >
+            <span className="material-symbols-outlined text-[18px]">storefront</span>
+            Daftar Produk
+          </button>
+          <button 
+            onClick={() => setActivePane('cart')}
+            className={`flex-1 py-3 text-center text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all ${
+              activePane === 'cart' ? 'bg-primary text-on-primary font-bold' : 'text-on-surface-variant hover:bg-surface-variant/30'
+            }`}
+          >
+            <span className="material-symbols-outlined text-[18px]">shopping_cart</span>
+            Keranjang ({cart.reduce((sum, item) => sum + item.quantity, 0)})
+          </button>
+        </div>
+
         {/* Left Panel: Product Grid */}
-        <section className="flex-1 flex flex-col min-w-0 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden">
+        <section className={`flex-1 flex flex-col min-w-0 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden ${activePane === 'products' ? 'flex' : 'hidden lg:flex'}`}>
           {/* Search Bar */}
           <div className="px-6 py-4 border-b border-outline-variant bg-surface flex items-center gap-3">
             <div className="relative flex items-center flex-1 max-w-2xl h-10 rounded-full bg-surface-container-lowest border border-outline-variant focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all overflow-hidden">
@@ -169,7 +192,7 @@ export default function Transaksi() {
           </div>
         </section>
         {/* Right Panel: Active Cart */}
-        <aside className="w-[380px] bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm flex flex-col flex-shrink-0 overflow-hidden">
+        <aside className={`w-full lg:w-[380px] bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm flex flex-col flex-shrink-0 overflow-hidden ${activePane === 'cart' ? 'flex' : 'hidden lg:flex'}`}>
           {/* Cart Header */}
           <div className="px-6 py-4 border-b border-outline-variant flex justify-between items-center bg-surface">
             <div>
@@ -297,6 +320,25 @@ export default function Transaksi() {
             </button>
           </div>
         </aside>
+
+        {/* Floating Cart Button for Mobile (Products View Only) */}
+        {cart.length > 0 && activePane === 'products' && (
+          <div className="lg:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-30 w-[90%] max-w-sm">
+            <button 
+              onClick={() => setActivePane('cart')}
+              className="w-full bg-primary text-on-primary font-bold py-3 px-6 rounded-full shadow-2xl flex items-center justify-between hover:bg-primary/95 active:scale-95 transition-transform"
+            >
+              <span className="flex items-center gap-2">
+                <span className="material-symbols-outlined">shopping_cart</span>
+                <span>{cart.reduce((sum, item) => sum + item.quantity, 0)} Item</span>
+              </span>
+              <span className="flex items-center gap-1 text-sm">
+                <span>Bayar: Rp {subtotal.toLocaleString('id-ID')}</span>
+                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </span>
+            </button>
+          </div>
+        )}
       </div>
 
       <PembayaranModal

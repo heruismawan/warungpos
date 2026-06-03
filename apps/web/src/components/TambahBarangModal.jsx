@@ -177,7 +177,7 @@ export default function TambahBarangModal({ isOpen, onClose, initialData = null,
         </div>
 
         {/* Content */}
-        <div className="p-8 overflow-y-auto custom-scrollbar flex-1">
+        <div className="p-4 md:p-8 overflow-y-auto custom-scrollbar flex-1">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Left Column: Visual & Identitas (7 cols) */}
             <div className="lg:col-span-7 space-y-8">

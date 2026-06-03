@@ -376,7 +376,7 @@ export default function PembayaranModal({ isOpen, onClose, onSuccess }) {
         <div className="overflow-y-auto flex-1 bg-surface-container-lowest">
           {/* ===== TUNAI TAB ===== */}
           {activeTab === 'tunai' && (
-            <div className="p-6 flex gap-6">
+            <div className="p-6 flex flex-col sm:flex-row gap-6">
               {/* Left Side: Input & Change */}
               <div className="flex-1 flex flex-col gap-6">
                 <div>
@@ -434,7 +434,7 @@ export default function PembayaranModal({ isOpen, onClose, onSuccess }) {
                 </div>
               </div>
               {/* Right Side: Numpad */}
-              <div className="w-56 grid grid-cols-3 gap-2 shrink-0">
+              <div className="w-full sm:w-56 grid grid-cols-3 gap-2 shrink-0">
                 {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map((num) => (
                   <button
                     key={num}
@@ -574,7 +574,7 @@ export default function PembayaranModal({ isOpen, onClose, onSuccess }) {
 
           {/* ===== HUTANG TAB ===== */}
           {activeTab === 'hutang' && (
-            <div className="p-6 flex gap-6">
+            <div className="p-6 flex flex-col gap-6">
               <div className="flex-1 flex flex-col gap-4 max-w-md mx-auto w-full">
                 <div className="text-center mb-2">
                   <h3 className="font-headline-md text-on-surface">Catat sebagai Hutang</h3>

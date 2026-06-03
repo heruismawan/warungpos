@@ -8,6 +8,7 @@ export default function Layout({ children }) {
   const { user, logout } = useAuth();
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -31,25 +32,34 @@ export default function Layout({ children }) {
   return (
     <div className="bg-background text-on-background antialiased min-h-screen">
       {/* SideNavBar */}
-      <nav className="fixed left-0 top-0 h-screen w-sidebar-width border-r border-outline-variant shadow-sm dark:shadow-none bg-surface-container-lowest flex flex-col py-6 z-50">
+      <nav className={`fixed left-0 top-0 h-screen w-sidebar-width border-r border-outline-variant shadow-sm dark:shadow-none bg-surface-container-lowest flex flex-col py-6 z-50 transition-transform duration-300 ease-in-out lg:translate-x-0 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         {/* Brand Header */}
-        <div className="px-6 mb-8 flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
-            <span
-              className="material-symbols-outlined"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              storefront
-            </span>
+        <div className="px-6 mb-8 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+              <span
+                className="material-symbols-outlined"
+                style={{ fontVariationSettings: "'FILL' 1" }}
+              >
+                storefront
+              </span>
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-primary font-headline-md text-headline-md">
+                WarungPOS
+              </h1>
+              <p className="text-xs text-on-surface-variant font-body-sm text-body-sm">
+                Retail Management
+              </p>
+            </div>
           </div>
-          <div>
-            <h1 className="text-xl font-bold text-primary font-headline-md text-headline-md">
-              WarungPOS
-            </h1>
-            <p className="text-xs text-on-surface-variant font-body-sm text-body-sm">
-              Retail Management
-            </p>
-          </div>
+          <button 
+            onClick={() => setIsSidebarOpen(false)}
+            className="lg:hidden p-1.5 hover:bg-surface-variant text-on-surface-variant rounded-full transition-colors"
+            title="Tutup Menu"
+          >
+            <span className="material-symbols-outlined">close</span>
+          </button>
         </div>
         {/* Main Navigation */}
         <div className="flex-1 px-4 space-y-1">
@@ -58,7 +68,12 @@ export default function Layout({ children }) {
             return (
               <button
                 key={item.name}
-                onClick={() => item.path !== '#' && navigate(item.path)}
+                onClick={() => {
+                  if (item.path !== '#') {
+                    navigate(item.path);
+                    setIsSidebarOpen(false);
+                  }
+                }}
                 className={`w-full flex items-center gap-3 px-4 py-3 transition-all rounded-r-lg border-l-4 transition-colors duration-200 active:opacity-80 ${
                   isActive
                     ? 'text-primary bg-surface-container-lowest border-primary font-semibold'
@@ -115,12 +130,27 @@ export default function Layout({ children }) {
           </div>
         </div>
       </nav>
+      {/* Mobile Backdrop */}
+      {isSidebarOpen && (
+        <div 
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+
       {/* Main Content Wrapper */}
-      <div className="ml-sidebar-width min-h-screen flex flex-col">
+      <div className="ml-0 lg:ml-sidebar-width min-h-screen flex flex-col">
         {/* TopAppBar */}
-        <header className="fixed top-0 right-0 w-[calc(100%-260px)] h-16 z-40 bg-surface/80 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-8">
-          <div className="flex items-center gap-4 text-on-surface-variant">
-            <span className="font-body-sm text-body-sm font-medium">
+        <header className="fixed top-0 right-0 left-0 lg:left-sidebar-width h-16 z-30 bg-surface/80 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-4 lg:px-8">
+          <div className="flex items-center gap-3 text-on-surface-variant">
+            <button 
+              onClick={() => setIsSidebarOpen(true)}
+              className="lg:hidden p-2 -ml-2 rounded-full hover:bg-surface-variant text-on-surface transition-colors"
+              aria-label="Open menu"
+            >
+              <span className="material-symbols-outlined">menu</span>
+            </button>
+            <span className="font-body-sm text-body-sm font-medium hidden sm:inline">
               {new Date().toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
             </span>
           </div>
@@ -159,7 +189,7 @@ export default function Layout({ children }) {
           </div>
         </header>
         {/* Page Content */}
-        <main className="flex-1 pt-24 px-margin-page pb-margin-page overflow-x-hidden">
+        <main className="flex-1 pt-20 px-4 md:px-margin-page pb-margin-page overflow-x-hidden">
           <div className="max-w-container-max mx-auto">
             {children}
           </div>
