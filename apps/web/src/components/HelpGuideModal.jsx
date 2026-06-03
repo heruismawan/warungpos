@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 
-export default function HelpGuideModal({ isOpen, onClose }) {
+export default function HelpGuideModal({ isOpen, onClose, onStartTour }) {
   const { user } = useAuth();
   const [activeTab, setActiveTab] = useState('peran');
 
@@ -294,7 +294,17 @@ export default function HelpGuideModal({ isOpen, onClose }) {
         </div>
 
         {/* Footer */}
-        <div className="px-6 py-4 border-t border-outline-variant flex justify-end bg-surface-container-lowest">
+        <div className="px-6 py-4 border-t border-outline-variant flex justify-between items-center bg-surface-container-lowest">
+          <button
+            onClick={() => {
+              onClose();
+              if (onStartTour) onStartTour();
+            }}
+            className="px-4 py-2 bg-secondary text-on-secondary hover:bg-secondary/90 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5"
+          >
+            <span className="material-symbols-outlined text-[16px]">explore</span>
+            Mulai Tur Halaman Ini
+          </button>
           <button
             onClick={onClose}
             className="px-5 py-2 bg-primary text-on-primary hover:bg-primary/90 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"

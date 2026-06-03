@@ -90,6 +90,7 @@ export default function Inventaris() {
               Export
             </button>
             <button 
+              id="tour-inv-add"
               onClick={() => {
                 setEditingProduct(null);
                 setIsModalOpen(true);
@@ -103,7 +104,7 @@ export default function Inventaris() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div id="tour-inv-stats" className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-sm">
             <div className="flex justify-between items-start">
               <p className="text-sm font-medium text-on-surface-variant uppercase tracking-wider">Total Produk</p>
@@ -144,7 +145,7 @@ export default function Inventaris() {
 
         {/* Filters and Table Section */}
         <div className="bg-surface-container-lowest border border-outline-variant rounded-xl shadow-sm overflow-hidden">
-          <div className="p-4 border-b border-outline-variant flex flex-col md:flex-row gap-4 justify-between bg-surface/50">
+          <div id="tour-inv-filters" className="p-4 border-b border-outline-variant flex flex-col md:flex-row gap-4 justify-between bg-surface/50">
             <div className="relative flex-1 max-w-md">
               <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
               <input 
@@ -186,7 +187,7 @@ export default function Inventaris() {
             </div>
           </div>
 
-          <div className="overflow-x-auto">
+          <div id="tour-inv-table" className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-surface-variant/30 text-on-surface-variant text-xs uppercase tracking-wider font-semibold">

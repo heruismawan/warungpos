@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import HelpGuideModal from './HelpGuideModal';
+import AppTour from './AppTour';
 
 export default function Layout({ children }) {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ export default function Layout({ children }) {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
+  const [isTourActive, setIsTourActive] = useState(false);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -34,7 +36,7 @@ export default function Layout({ children }) {
   return (
     <div className="bg-background text-on-background antialiased min-h-screen">
       {/* SideNavBar */}
-      <nav className={`fixed left-0 top-0 h-screen w-sidebar-width border-r border-outline-variant shadow-sm dark:shadow-none bg-surface-container-lowest flex flex-col py-6 z-50 transition-transform duration-300 ease-in-out lg:translate-x-0 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <nav id="tour-sidebar" className={`fixed left-0 top-0 h-screen w-sidebar-width border-r border-outline-variant shadow-sm dark:shadow-none bg-surface-container-lowest flex flex-col py-6 z-50 transition-transform duration-300 ease-in-out lg:translate-x-0 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         {/* Brand Header */}
         <div className="px-6 mb-8 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -167,6 +169,7 @@ export default function Layout({ children }) {
                 </span>
               </button>
               <button 
+                id="tour-help"
                 onClick={() => setIsHelpOpen(true)}
                 className="p-2 text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:scale-95 transition-transform rounded-full hover:bg-surface-variant"
                 title="Bantuan & Panduan"
@@ -276,6 +279,13 @@ export default function Layout({ children }) {
       <HelpGuideModal 
         isOpen={isHelpOpen} 
         onClose={() => setIsHelpOpen(false)} 
+        onStartTour={() => setIsTourActive(true)}
+      />
+
+      {/* App Tour System */}
+      <AppTour 
+        isOpen={isTourActive} 
+        onClose={() => setIsTourActive(false)} 
       />
     </div>
   );

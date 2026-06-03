@@ -94,7 +94,7 @@ export default function Transaksi() {
         <section className={`flex-1 flex flex-col min-w-0 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden ${activePane === 'products' ? 'flex' : 'hidden lg:flex'}`}>
           {/* Search Bar */}
           <div className="px-6 py-4 border-b border-outline-variant bg-surface flex items-center gap-3">
-            <div className="relative flex items-center flex-1 max-w-2xl h-10 rounded-full bg-surface-container-lowest border border-outline-variant focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all overflow-hidden">
+            <div id="tour-pos-search" className="relative flex items-center flex-1 max-w-2xl h-10 rounded-full bg-surface-container-lowest border border-outline-variant focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all overflow-hidden">
               <div className="pl-4 pr-2 text-on-surface-variant flex items-center justify-center">
                 <span className="material-symbols-outlined text-[20px]">
                   barcode_scanner
@@ -118,7 +118,7 @@ export default function Transaksi() {
             </div>
           </div>
           {/* Category Filters */}
-          <div className="px-6 py-3 border-b border-outline-variant bg-surface/50 flex items-center gap-3 overflow-x-auto no-scrollbar">
+          <div id="tour-pos-cats" className="px-6 py-3 border-b border-outline-variant bg-surface/50 flex items-center gap-3 overflow-x-auto no-scrollbar">
             {categories.map(cat => (
               <button 
                 key={cat}
@@ -134,7 +134,7 @@ export default function Transaksi() {
             ))}
           </div>
           {/* Products */}
-          <div className="flex-1 p-6 overflow-y-auto">
+          <div id="tour-pos-products" className="flex-1 p-6 overflow-y-auto">
             {loading ? (
               <div className="flex items-center justify-center h-full">
                 <span className="material-symbols-outlined text-[40px] text-primary animate-spin">progress_activity</span>
@@ -192,7 +192,7 @@ export default function Transaksi() {
           </div>
         </section>
         {/* Right Panel: Active Cart */}
-        <aside className={`w-full lg:w-[380px] bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm flex flex-col flex-shrink-0 overflow-hidden ${activePane === 'cart' ? 'flex' : 'hidden lg:flex'}`}>
+        <aside id="tour-pos-cart" className={`w-full lg:w-[380px] bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm flex flex-col flex-shrink-0 overflow-hidden ${activePane === 'cart' ? 'flex' : 'hidden lg:flex'}`}>
           {/* Cart Header */}
           <div className="px-6 py-4 border-b border-outline-variant flex justify-between items-center bg-surface">
             <div>
@@ -214,7 +214,7 @@ export default function Transaksi() {
             </button>
           </div>
           {/* Mode Grosir Toggle */}
-          <div className="px-6 py-3 border-b border-outline-variant bg-surface-container flex items-center justify-between">
+          <div id="tour-pos-wholesale" className="px-6 py-3 border-b border-outline-variant bg-surface-container flex items-center justify-between">
             <span className="font-body-sm text-on-surface-variant font-semibold flex items-center gap-1.5">
               <span className="material-symbols-outlined text-[18px]">sell</span>
               Mode Harga Grosir

@@ -87,6 +87,7 @@ export default function ManajemenUtang() {
           </div>
           <div className="flex items-center gap-3">
             <button 
+              id="tour-debt-add"
               onClick={() => setIsModalOpen(true)}
               className="flex items-center gap-2 px-4 py-2 bg-primary text-on-primary rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium shadow-sm"
             >
@@ -97,7 +98,7 @@ export default function ManajemenUtang() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div id="tour-debt-stats" className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-sm">
             <div className="flex justify-between items-start">
               <p className="text-sm font-medium text-on-surface-variant uppercase tracking-wider">Total Piutang</p>
@@ -160,7 +161,7 @@ export default function ManajemenUtang() {
             </div>
           </div>
 
-          <div className="overflow-x-auto">
+          <div id="tour-debt-table" className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-surface-variant/30 text-on-surface-variant text-xs uppercase tracking-wider font-semibold">

@@ -107,7 +107,7 @@ export default function Dashboard() {
           </p>
         </div>
         {/* Bento Grid KPI Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <div id="tour-db-stats" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {/* Card 1: Total Sales Today */}
           <div className="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant shadow-sm relative overflow-hidden group">
             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -212,7 +212,7 @@ export default function Dashboard() {
         {/* Layout 2 Columns: Chart & Table */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter mt-8">
           {/* Chart Area (8 cols) */}
-          <div className="lg:col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm flex flex-col h-[400px]">
+          <div id="tour-db-chart" className="lg:col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm flex flex-col h-[400px]">
             <div className="p-6 border-b border-outline-variant flex justify-between items-center">
               <h3 className="font-headline-md text-headline-md text-on-surface">
                 Grafik Penjualan Mingguan
@@ -253,7 +253,7 @@ export default function Dashboard() {
             </div>
           </div>
           {/* Table Area (4 cols) */}
-          <div className="lg:col-span-4 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm flex flex-col h-[400px]">
+          <div id="tour-db-recent" className="lg:col-span-4 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm flex flex-col h-[400px]">
             <div className="p-6 border-b border-outline-variant flex justify-between items-center">
               <h3 className="font-headline-md text-headline-md text-on-surface">
                 5 Transaksi Terakhir
