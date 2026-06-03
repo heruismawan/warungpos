@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import HelpGuideModal from './HelpGuideModal';
 
 export default function Layout({ children }) {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ export default function Layout({ children }) {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isHelpOpen, setIsHelpOpen] = useState(false);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -164,7 +166,11 @@ export default function Layout({ children }) {
                   notifications
                 </span>
               </button>
-              <button className="p-2 text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:scale-95 transition-transform rounded-full hover:bg-surface-variant">
+              <button 
+                onClick={() => setIsHelpOpen(true)}
+                className="p-2 text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:scale-95 transition-transform rounded-full hover:bg-surface-variant"
+                title="Bantuan & Panduan"
+              >
                 <span
                   className="material-symbols-outlined"
                   data-icon="help_outline"
@@ -265,6 +271,12 @@ export default function Layout({ children }) {
           </div>
         </div>
       )}
+
+      {/* Help & Guide Modal */}
+      <HelpGuideModal 
+        isOpen={isHelpOpen} 
+        onClose={() => setIsHelpOpen(false)} 
+      />
     </div>
   );
 }
